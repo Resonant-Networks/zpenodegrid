@@ -1,0 +1,23 @@
+model:
+  default: deepseek/deepseek-v4-flash-0731
+  provider: openrouter
+  base_url: https://openrouter.ai/api/v1
+  api_mode: chat_completions
+
+runtime:
+  nofile_soft_limit: 4096
+
+agent:
+  max_turns: 150
+  verbose: false
+  reasoning_effort: medium
+
+terminal:
+  backend: local
+  cwd: /workspace
+  timeout: 180
+
+compression:
+  enabled: true
+  threshold: 0.5
+  target_ratio: 0.2

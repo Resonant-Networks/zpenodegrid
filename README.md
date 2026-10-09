@@ -113,11 +113,17 @@ zpenodegrid/
 │   ├── access-mop.md                    # Step-by-step Method of Procedure (MOP)
 │   ├── serial-console-management.md     # Serial session controls, baud rates & escape keys
 │   ├── troubleshooting-guide.md         # Diagnostic runbook for ACL, ARP, and connectivity
-│   └── tailscale-docker-subnet-router.md # Dockerized Tailscale subnet router specification
+│   ├── tailscale-docker-subnet-router.md # Dockerized Tailscale subnet router specification
+│   └── hermes-zpe-harness.md            # Hermes Agent container harness on ZPE Docker
+│
+├── docker/                              # Container definitions
+│   └── hermes/                          # Configuration for Hermes Agent on ZPE
 │
 └── scripts/                             # Operational automation scripts
     ├── tunnel-zpe-web.sh                # Automated port-forwarding for Web UI (localhost:8443)
-    └── connect-zpe-ssh.sh               # One-click SSH jump connection script
+    ├── connect-zpe-ssh.sh               # One-click SSH jump connection script
+    ├── deploy-hermes-to-zpe.sh          # Deploy Hermes Agent to ZPE Docker
+    └── zpe-hermes.sh                    # Attach to interactive Hermes session on ZPE
 ```
 
 ---
