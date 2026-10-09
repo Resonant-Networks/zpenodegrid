@@ -112,7 +112,8 @@ zpenodegrid/
 │   ├── architecture-and-topology.md     # Hardware specs, network architecture & IP policy
 │   ├── access-mop.md                    # Step-by-step Method of Procedure (MOP)
 │   ├── serial-console-management.md     # Serial session controls, baud rates & escape keys
-│   └── troubleshooting-guide.md         # Diagnostic runbook for ACL, ARP, and connectivity
+│   ├── troubleshooting-guide.md         # Diagnostic runbook for ACL, ARP, and connectivity
+│   └── tailscale-docker-subnet-router.md # Dockerized Tailscale subnet router specification
 │
 └── scripts/                             # Operational automation scripts
     ├── tunnel-zpe-web.sh                # Automated port-forwarding for Web UI (localhost:8443)
